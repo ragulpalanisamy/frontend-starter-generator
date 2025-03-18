@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 import { Octokit } from '@octokit/rest';
 import type { GitHubAuthConfig } from '@/types';
-import { GITHUB_CLIENT_ID, GITHUB_REDIRECT_URI } from '@/constants/options';
+import { GITHUB_CLIENT_ID, GITHUB_REDIRECT_URI } from '@/config';
 
 export const useGitHubAuth = ({ selectedFramework, selectedLanguage }: GitHubAuthConfig) => {
   const [isLoading, setIsLoading] = useState(false);

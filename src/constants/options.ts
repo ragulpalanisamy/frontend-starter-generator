@@ -30,7 +30,3 @@ export const languages: LanguageOption[] = [
     description: 'Dynamic and flexible development'
   }
 ];
-
-// Replace with your GitHub OAuth App client ID
-export const GITHUB_CLIENT_ID = process.env.VITE_GITHUB_CLIENT_ID || '';
-export const GITHUB_REDIRECT_URI = window.location.origin; 
